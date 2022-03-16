@@ -20,3 +20,5 @@ print("blabla")
 
 def fonction(a,b):
     print(a+b)
+for i in range (4):
+    print("saas")
