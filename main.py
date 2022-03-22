@@ -27,3 +27,5 @@ for i in range (4):
     print("essaie")
 
 print("vitesse fusée")
+
+prtioq
