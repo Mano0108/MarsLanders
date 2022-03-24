@@ -1,0 +1,41 @@
+Fonction éval: 
+variables input:
+- Bool: success or fail 
+- (Double,Double): last coordinate before crashing/landing 
+
+variables calculated:
+- Double: Distance drone - plateform center 
+
+output
+- return (0 or 1, distance) 
+
+
+
+Fonction Génère trajectoire: 
+variables globales:
+- population 
+- start, end, alt, mid 
+variables input: 
+- x, y, h_speed, v_speed, 
+
+
+output
+- return [(rotate,power)]*len
+- population.append(output)
+
+
+Fonction sort/search/crossover/mutate...
+variables globales: 
+- fonction d'évaluation 
+- population trié [50]
+- population trié [25]
+- population crossed over [25]
+- population new [50] = population crossed over [25] + population random [25]
+variables input:
+- population 
+
+for i in population :
+	EvalFonction(i) 
+sort
+variables output: 
+- return 
