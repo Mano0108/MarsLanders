@@ -11,21 +11,22 @@ for i, (x, y) in enumerate(points):
         break
 
 
+def LandingZone(X,Y):
+    if abs(X-mid)<1600 :
+        return True
+    else: 
+        return False
+
 
 
 def EvalFunction(X, Y, H_SPEED, V_SPEED, ROTATE,X_TARGET, Y_TARGET):
     result = []
-    
     if ROTATE == 0 and H_SPEED<=40.0 and V_SPEED <= 20.0 and Y==Y_TARGET: 
         result.append(1)
     else :
         result.append(0)
-    
     result.append(math.sqrt((Y_TARGET-Y)**2+(X_TARGET-X)**2))
-
     return result
-
-    
 # game loop
 while True:
     
